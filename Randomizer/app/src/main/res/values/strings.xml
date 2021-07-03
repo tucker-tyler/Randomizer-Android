@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">Randomizer</string>
 
-    <!-- button names on main activity -->
-    <string name="coin_button">Flip a Coin</string>
-    <string name="hello_flip">Somebody Flip Me!</string>
-    <string name="flip_btn">Flip</string>
+    <!-- nav button names on main activity -->
+    <string name="nav_coin_button">Flip a Coin</string>
+    <string name="nav_dice_button">Roll a Die</string>
+    <string name="nav_rand_num_button">Random Number</string>
+
+    <!-- coin activity -->
+    <string name="answer_coin_flip">Somebody Flip Me!</string>
+    <string name="button_coin_flip">Flip</string>
+
+    <!-- dice roll activity -->
+    <string name="answer_roll_dice">Somebody Roll Me!</string>
+    <string name="button_roll_dice">Roll</string>
+
+    <!-- random number activity -->
+    <string name="answer_random_number">Random Number</string>
+    <string name="button_random_number">Random Number</string>
+
 </resources>

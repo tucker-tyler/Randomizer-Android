@@ -14,9 +14,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    // opens the coin flipper class
     public void coinFlipOpener(View view) {
         Intent intent = new Intent(this, CoinFlip.class);
+        startActivity(intent);
+    }
+
+    public void diceRollOpener(View view) {
+        Intent intent = new Intent(this, DiceRoll.class);
+        startActivity(intent);
+    }
+
+    public void randomNumberOpener(View view) {
+        Intent intent = new Intent(this, RandomNumber.class);
         startActivity(intent);
     }
 }

@@ -3,11 +3,11 @@ package com.example.randomizer;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CoinFlip extends AppCompatActivity {
+public class DiceRoll extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coin_flip);
+        setContentView(R.layout.activity_dice_roll);
     }
 }

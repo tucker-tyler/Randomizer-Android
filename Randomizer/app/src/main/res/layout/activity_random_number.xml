@@ -2,31 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_random_num"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CoinFlip">
+    tools:context=".RandomNumber">
 
     <TextView
-        android:id="@+id/answer_coin_flip"
+        android:id="@+id/answer_random_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/answer_coin_flip"
+        android:text="@string/answer_random_number"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_coin_flip"
+        android:id="@+id/button_random_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/button_coin_flip"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_random_number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answer_coin_flip" />
-
+        app:layout_constraintTop_toBottomOf="@+id/answer_random_num" />
 </androidx.constraintlayout.widget.ConstraintLayout>
