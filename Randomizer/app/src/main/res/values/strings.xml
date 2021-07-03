@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Randomizer</string>
+
+    <!-- button names on main activity -->
+    <string name="coin_button">Flip a Coin</string>
+    <string name="hello_flip">Somebody Flip Me!</string>
+    <string name="flip_btn">Flip</string>
+</resources>
