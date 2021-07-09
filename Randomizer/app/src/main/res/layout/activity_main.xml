@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <!--    <LinearLayout-->
     <!--        android:id="@+id/linear_layout_main"-->
@@ -18,55 +19,76 @@
         android:id="@+id/nav_coin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="50dp"
         android:layout_weight="1"
         android:onClick="coinFlipOpener"
         android:text="@string/nav_coin_button"
         app:iconPadding="16dp"
         app:layout_constraintBottom_toTopOf="@+id/nav_random_num_button"
+        app:layout_constraintEnd_toStartOf="@+id/nav_dice_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.506" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/nav_dice_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
         android:layout_weight="1"
         android:onClick="diceRollOpener"
         android:text="@string/nav_dice_button"
         app:iconPadding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/nav_random_num_button"
+        app:layout_constraintBottom_toTopOf="@+id/nav_playing_card"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toEndOf="@+id/nav_coin_button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.508" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/nav_random_num_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="377dp"
         android:layout_weight="1"
         android:onClick="randomNumberOpener"
         android:text="@string/nav_rand_num_button"
         app:iconPadding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/nav_playing_card"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintTop_toBottomOf="@+id/nav_coin_button" />
+
+    <Button
+        android:id="@+id/nav_playing_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="377dp"
+        android:layout_weight="1"
+        android:onClick="playingCardOpener"
+        android:text="@string/nav_playing_card_button"
+        app:iconPadding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nav_random_num_button"
+        app:layout_constraintTop_toBottomOf="@+id/nav_dice_button" />
     <!--    </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

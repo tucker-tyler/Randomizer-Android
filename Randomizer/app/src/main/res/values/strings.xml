@@ -5,17 +5,22 @@
     <string name="nav_coin_button">Flip a Coin</string>
     <string name="nav_dice_button">Roll a Die</string>
     <string name="nav_rand_num_button">Random Number</string>
+    <string name="nav_playing_card_button">Pick a Card</string>
 
     <!-- coin activity -->
-    <string name="answer_coin_flip">Somebody Flip Me!</string>
+    <string name="answer_coin_flip">Flip a coin</string>
     <string name="button_coin_flip">Flip</string>
 
     <!-- dice roll activity -->
-    <string name="answer_roll_dice">Somebody Roll Me!</string>
+    <string name="answer_roll_dice">Roll a die</string>
     <string name="button_roll_dice">Roll</string>
 
     <!-- random number activity -->
-    <string name="answer_random_number">Random Number</string>
-    <string name="button_random_number">Random Number</string>
+    <string name="answer_random_number">Random number</string>
+    <string name="button_random_number">Random</string>
+
+    <!-- playing card activity -->
+    <string name="answer_playing_card">Pick a card, any card…</string>
+    <string name="button_playing_card">Pick</string>
 
 </resources>

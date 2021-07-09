@@ -10,9 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Randomizer">
         <activity
-            android:name=".RandomNumber"
+            android:name=".PlayingCard"
             android:parentActivityName=".MainActivity"
             >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".RandomNumber"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RandomNumber.class);
         startActivity(intent);
     }
+
+    public void playingCardOpener(View view) {
+        Intent intent = new Intent(this, PlayingCard.class);
+        startActivity(intent);
+    }
 }
