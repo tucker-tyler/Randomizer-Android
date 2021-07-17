@@ -90,5 +90,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/nav_random_num_button"
         app:layout_constraintTop_toBottomOf="@+id/nav_dice_button" />
+
+    <ImageButton
+        android:id="@+id/imgBtnCoin"
+        android:layout_width="85dp"
+        android:layout_height="81dp"
+        android:onClick="coinFlipOpener"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_random_num_button"
+        app:srcCompat="@drawable/dollar"
+        tools:layout_editor_absoluteX="67dp" />
     <!--    </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
