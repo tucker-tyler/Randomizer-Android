@@ -2,7 +2,7 @@
     <string name="app_name">Randomizer</string>
 
     <!-- nav button names on main activity -->
-    <string name="nav_coin_button">Flip a Coin</string>
+    <string name="nav_coin_title">Flip a Coin</string>
     <string name="nav_dice_button">Roll a Die</string>
     <string name="nav_rand_num_button">Random Number</string>
     <string name="nav_playing_card_button">Pick a Card</string>
