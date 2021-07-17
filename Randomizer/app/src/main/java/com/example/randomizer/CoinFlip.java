@@ -2,30 +2,45 @@ package com.example.randomizer;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Random;
 
 public class CoinFlip extends AppCompatActivity {
 
+    Button buttonFlipCoin;
+    TextView answerCoinFlip;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // creates instance
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coin_flip);
-    }
 
-    class getFlip {
-        Random random = new Random();
+        // assigns button class to XML button
+        buttonFlipCoin = (Button) findViewById(R.id.button_coin_flip);
+        // assigns textview class to XML textview
+        answerCoinFlip = (TextView) findViewById(R.id.answer_coin_flip);
 
-        int coinFlip = random.nextInt(2);
+        // sets what happens when the button is pressed
+        buttonFlipCoin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random random = new Random();
 
-        String flipResult;
+                int coinFlip = random.nextInt(2);
 
-        class convertFlip {
-            if (coinFlip == 0) {
-                flipResult = "Heads";
-            } else {
-                flipResult = "Tails";
+                if (coinFlip == 0) {
+                    answerCoinFlip.setText(R.string.coin_flip_heads);
+                } else if (coinFlip == 1){
+                    answerCoinFlip.setText(R.string.coin_flip_tails);
+                } else {
+                    answerCoinFlip.setText(R.string.coin_flip_error);
+                }
             }
-        }
+        });
     }
 }

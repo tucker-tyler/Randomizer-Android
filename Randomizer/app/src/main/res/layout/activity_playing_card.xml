@@ -8,16 +8,15 @@
     tools:context=".PlayingCard">
 
     <TextView
-        android:id="@+id/answer_playing_card"
+        android:id="@+id/title_playing_card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/answer_playing_card"
+        android:layout_marginTop="68dp"
+        android:text="@string/title_playing_card"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_playing_card"
@@ -33,6 +32,47 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answer_playing_card" />
+        app:layout_constraintTop_toBottomOf="@+id/title_playing_card" />
+
+    <TextView
+        android:id="@+id/answer_playing_card_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer_playing_card_num"
+        app:layout_constraintBottom_toTopOf="@+id/button_playing_card"
+        app:layout_constraintEnd_toStartOf="@+id/of"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_playing_card" />
+
+    <TextView
+        android:id="@+id/of"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/of"
+        app:layout_constraintBottom_toTopOf="@+id/button_playing_card"
+        app:layout_constraintEnd_toStartOf="@+id/answer_playing_card_suit"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_playing_card" />
+
+    <TextView
+        android:id="@+id/answer_playing_card_suit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="239dp"
+        android:layout_marginLeft="239dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/answer_playing_card_suit"
+        app:layout_constraintBottom_toTopOf="@+id/button_playing_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_playing_card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

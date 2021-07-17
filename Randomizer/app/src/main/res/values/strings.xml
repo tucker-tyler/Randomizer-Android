@@ -8,19 +8,39 @@
     <string name="nav_playing_card_button">Pick a Card</string>
 
     <!-- coin activity -->
-    <string name="answer_coin_flip">Flip a coin</string>
+    <string name="title_coin_flip">Flip a coin</string>
+    <string name="answer_coin_flip"> </string>
     <string name="button_coin_flip">Flip</string>
+    <string name="coin_flip_heads">Heads</string>
+    <string name="coin_flip_tails">Tails</string>
+    <string name="coin_flip_error">Error</string>
 
     <!-- dice roll activity -->
-    <string name="answer_roll_dice">Roll a die</string>
-    <string name="button_roll_dice">Roll</string>
+    <string name="title_dice_roll">Roll a die</string>
+    <string name="answer_dice_roll"> </string>
+    <string name="button_dice_roll">Roll</string>
+    <string name="dice_roll_1">1</string>
+    <string name="dice_roll_2">2</string>
+    <string name="dice_roll_3">3</string>
+    <string name="dice_roll_4">4</string>
+    <string name="dice_roll_5">5</string>
+    <string name="dice_roll_6">6</string>
 
     <!-- random number activity -->
-    <string name="answer_random_number">Random number</string>
+    <string name="title_random_number">Random number</string>
+    <string name="answer_random_number"> </string>
     <string name="button_random_number">Random</string>
 
     <!-- playing card activity -->
-    <string name="answer_playing_card">Pick a card, any card…</string>
+    <string name="title_playing_card">Pick a card, any card…</string>
+    <string name="answer_playing_card_number"> </string>
+    <string name="of"> of </string>
+    <string name="answer_playing_card_suit">Suit</string>
     <string name="button_playing_card">Pick</string>
+    <string name="suit_spade">Spade</string>
+    <string name="suit_club">Club</string>
+    <string name="suit_heart">Heart</string>
+    <string name="suit_diamond">Diamond</string>
+    <string name="answer_playing_card_num">Num</string>
 
 </resources>
