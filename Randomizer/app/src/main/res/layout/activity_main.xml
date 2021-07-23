@@ -16,51 +16,17 @@
     <!--        tools:layout_editor_absoluteX="1dp"-->
     <!--        tools:layout_editor_absoluteY="1dp">-->
 
-    <Button
-        android:id="@+id/nav_random_num_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="377dp"
-        android:layout_weight="1"
-        android:onClick="randomNumberOpener"
-        android:text="@string/nav_rand_num_button"
-        app:iconPadding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/nav_playing_card"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/nav_playing_card"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="377dp"
-        android:layout_weight="1"
-        android:onClick="playingCardOpener"
-        android:text="@string/nav_playing_card_button"
-        app:iconPadding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nav_random_num_button" />
-
     <ImageButton
         android:id="@+id/nav_coin_button"
         android:layout_width="85dp"
         android:layout_height="85dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginTop="32dp"
         android:onClick="coinFlipOpener"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/nav_random_num_button"
-        app:layout_constraintEnd_toStartOf="@+id/nav_dice_image_button"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintEnd_toStartOf="@+id/nav_dice_button"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_coin_title"
         app:srcCompat="@drawable/dollar" />
 
     <TextView
@@ -69,38 +35,88 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginLeft="104dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:text="@string/nav_coin_title"
-        app:layout_constraintBottom_toTopOf="@+id/nav_coin_button"
         app:layout_constraintEnd_toStartOf="@+id/nav_dice_title"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/nav_dice_image_button"
+        android:id="@+id/nav_dice_button"
         android:layout_width="85dp"
         android:layout_height="85dp"
-        android:layout_marginBottom="44dp"
         android:onClick="diceRollOpener"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/nav_playing_card"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.809"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/dice" />
+        app:srcCompat="@drawable/dice"
+        tools:layout_editor_absoluteY="89dp" />
 
     <TextView
         android:id="@+id/nav_dice_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
         android:text="@string/nav_dice_button"
-        app:layout_constraintBottom_toTopOf="@+id/nav_dice_image_button"
+        app:layout_constraintBottom_toTopOf="@+id/nav_dice_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintVertical_bias="0.551" />
+
+    <ImageButton
+        android:id="@+id/nav_random_button"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginBottom="256dp"
+        android:onClick="randomNumberOpener"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/code" />
+
+    <TextView
+        android:id="@+id/nav_random_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/title_random_number"
+        app:layout_constraintBottom_toTopOf="@+id/nav_random_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_coin_button"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <ImageButton
+        android:id="@+id/nav_cards_button"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="268dp"
+        android:onClick="playingCardOpener"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/nav_random_button"
+        app:srcCompat="@drawable/playing_cards" />
+
+    <TextView
+        android:id="@+id/nav_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/title_playing_card"
+        app:layout_constraintBottom_toTopOf="@+id/nav_cards_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/nav_random_title"
+        app:layout_constraintTop_toBottomOf="@+id/nav_dice_button"
+        app:layout_constraintVertical_bias="1.0" />
     <!--    </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

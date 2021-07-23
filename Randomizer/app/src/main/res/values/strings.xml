@@ -27,7 +27,7 @@
     <string name="dice_roll_6">6</string>
 
     <!-- random number activity -->
-    <string name="title_random_number">Random number</string>
+    <string name="title_random_number">Random Number</string>
     <string name="answer_random_number"> </string>
     <string name="button_random_number">Random</string>
 
