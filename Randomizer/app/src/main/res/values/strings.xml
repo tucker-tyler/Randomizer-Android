@@ -28,6 +28,7 @@
 
     <!-- random number activity -->
     <string name="title_random_number">Random Number</string>
+    <string name="description_random_number">Find a number between 1 and 100</string>
     <string name="answer_random_number"> </string>
     <string name="button_random_number">Random</string>
 
@@ -42,5 +43,8 @@
     <string name="suit_heart">Heart</string>
     <string name="suit_diamond">Diamond</string>
     <string name="answer_playing_card_num">Num</string>
+
+    <!-- errors -->
+    <string name="error_general">general error</string>
 
 </resources>

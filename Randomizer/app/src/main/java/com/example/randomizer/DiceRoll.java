@@ -28,25 +28,25 @@ public class DiceRoll extends AppCompatActivity {
             public void onClick(View v) {
                 Random random = new Random();
 
-                int diceRoll = random.nextInt(5);
+                int diceRoll = (random.nextInt(6)) + 1;
 
                 switch (diceRoll) {
-                    case 0:
+                    case 1:
                         answerDiceRoll.setText(R.string.dice_roll_1);
                         break;
-                    case 1:
+                    case 2:
                         answerDiceRoll.setText(R.string.dice_roll_2);
                         break;
-                    case 2:
+                    case 3:
                         answerDiceRoll.setText(R.string.dice_roll_3);
                         break;
-                    case 3:
+                    case 4:
                         answerDiceRoll.setText(R.string.dice_roll_4);
                         break;
-                    case 4:
+                    case 5:
                         answerDiceRoll.setText(R.string.dice_roll_5);
                         break;
-                    case 5:
+                    case 6:
                         answerDiceRoll.setText(R.string.dice_roll_6);
                         break;
                 }

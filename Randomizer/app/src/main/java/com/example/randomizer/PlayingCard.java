@@ -48,6 +48,8 @@ public class PlayingCard extends AppCompatActivity {
                     case 3:
                         answerPlayingCard.setText(R.string.suit_diamond);
                         break;
+                    default:
+                        answerPlayingCard.setText(R.string.error_general);
                 }
 
                 switch (pickACardNum) {
@@ -69,6 +71,8 @@ public class PlayingCard extends AppCompatActivity {
                     case 5:
                         answerPlayingCard.setText(R.string.dice_roll_6);
                         break;
+                    default:
+                        answerPlayingCard.setText(R.string.error_general);
                 }
             }
         });
