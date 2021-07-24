@@ -31,8 +31,10 @@
         android:text="@string/button_playing_card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_playing_card" />
+        app:layout_constraintTop_toBottomOf="@+id/title_playing_card"
+        app:layout_constraintVertical_bias="0.404" />
 
     <TextView
         android:id="@+id/answer_playing_card_num"
@@ -74,5 +76,36 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_playing_card" />
+
+    <ImageView
+        android:id="@+id/img_card_number"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_playing_card"
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/icons8_cards_50" />
+
+    <ImageView
+        android:id="@+id/img_card_suit"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/img_card_number"
+        app:layout_constraintTop_toBottomOf="@+id/button_playing_card"
+        app:layout_constraintVertical_bias="0.406"
+        app:srcCompat="@drawable/poker" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
