@@ -1,5 +1,10 @@
 package com.example.randomizer;
 
+/*
+ * Makes a random number 1-6
+ * Returns the random number to the user
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +34,9 @@ public class DiceRoll extends AppCompatActivity {
                 Random random = new Random();
 
                 int diceRoll = (random.nextInt(6)) + 1;
+
+                // TODO: Get icons for each die side and return that instead
+                // TODO: Find a dice roll animation and put it in
 
                 switch (diceRoll) {
                     case 1:

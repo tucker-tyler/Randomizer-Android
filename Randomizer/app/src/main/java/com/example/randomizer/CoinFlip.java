@@ -1,5 +1,11 @@
 package com.example.randomizer;
 
+/*
+ * Makes a random number 0-1
+ * Uses a conditional to make 0 = heads and 1 = tails
+ * Returns 'heads' or 'tails' to the user
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;

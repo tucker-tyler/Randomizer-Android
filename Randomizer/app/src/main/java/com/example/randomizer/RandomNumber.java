@@ -1,5 +1,10 @@
 package com.example.randomizer;
 
+/*
+ * Finds a random number 1-100
+ * Returns the random number to the user
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -33,6 +38,8 @@ public class RandomNumber extends AppCompatActivity {
                 int randomNumGenerator = (random.nextInt(100)) + 1;
 
                 String answerFinal = Integer.toString(randomNumGenerator);
+
+                // TODO: Change the font, color, etc. on the random number to make it more aesthetic
 
                 answerRandomNumber.setText(answerFinal);
             }
