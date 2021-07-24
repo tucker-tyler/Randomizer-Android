@@ -118,5 +118,20 @@
         app:layout_constraintStart_toEndOf="@+id/nav_random_title"
         app:layout_constraintTop_toBottomOf="@+id/nav_dice_button"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/nav_credits_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="creditsOpener"
+        android:text="@string/title_credits"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_random_button"
+        app:layout_constraintVertical_bias="0.858" />
     <!--    </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

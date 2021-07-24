@@ -23,7 +23,7 @@ public class PlayingCard extends AppCompatActivity {
     TextView answerPlayingCardNum;
     TextView answerPlayingCardSuit;
 
-    String[] suits = {"Spade", "Club", "Heart", "Diamond"};
+    String[] suits = {"Spades", "Clubs", "Hearts", "Diamonds"};
     String[] cardNumbers = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
 
     @Override

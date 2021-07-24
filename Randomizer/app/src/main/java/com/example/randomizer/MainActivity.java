@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PlayingCard.class);
         startActivity(intent);
     }
+
+    public void creditsOpener(View view) {
+        Intent intent = new Intent(this, Credits.class);
+        startActivity(intent);
+    }
 }

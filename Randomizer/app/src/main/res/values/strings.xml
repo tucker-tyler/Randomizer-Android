@@ -47,4 +47,9 @@
     <!-- errors -->
     <string name="error_general">general error</string>
 
+    <!-- credits -->
+    <string name="title_credits">Credits</string>
+    <string name="credits_copyright">&#169; webcooltz 2021</string>
+    <string name="credits_icons"><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+
 </resources>
