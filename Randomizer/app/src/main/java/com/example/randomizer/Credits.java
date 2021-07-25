@@ -16,7 +16,10 @@ public class Credits extends AppCompatActivity {
         setupHyperlink();
     }
     private void setupHyperlink() {
-        TextView linkTextView = findViewById(R.id.credits_icons);
-        linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView iconLink = findViewById(R.id.credits_icons);
+        iconLink.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView githubLink = findViewById(R.id.credits_github);
+        githubLink.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }
