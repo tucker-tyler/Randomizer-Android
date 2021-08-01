@@ -31,7 +31,8 @@
         app:layout_constraintEnd_toStartOf="@+id/nav_dice_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nav_coin_title"
-        app:srcCompat="@drawable/dollar" />
+        app:srcCompat="@drawable/dollar"
+        android:contentDescription="@string/nav_coin_title" />
 
     <TextView
         android:id="@+id/nav_coin_title"
@@ -67,7 +68,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/nav_coin_button"
         app:layout_constraintTop_toBottomOf="@+id/nav_dice_title"
-        app:srcCompat="@drawable/dice" />
+        app:srcCompat="@drawable/dice"
+        android:contentDescription="@string/title_dice_roll" />
 
     <TextView
         android:id="@+id/nav_dice_title"
@@ -100,7 +102,8 @@
         app:layout_constraintEnd_toStartOf="@+id/nav_cards_button"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/code" />
+        app:srcCompat="@drawable/code"
+        android:contentDescription="@string/title_random_number" />
 
     <TextView
         android:id="@+id/nav_random_title"
@@ -129,7 +132,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/nav_random_button"
         app:layout_constraintTop_toBottomOf="@+id/nav_card_title"
-        app:srcCompat="@drawable/playing_cards" />
+        app:srcCompat="@drawable/playing_cards"
+        android:contentDescription="@string/title_playing_card" />
 
     <TextView
         android:id="@+id/nav_card_title"

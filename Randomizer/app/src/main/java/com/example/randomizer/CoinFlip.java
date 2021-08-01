@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -19,6 +20,7 @@ public class CoinFlip extends AppCompatActivity {
 
     Button buttonFlipCoin;
     TextView answerCoinFlip;
+    ImageView imageViewCoin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,8 @@ public class CoinFlip extends AppCompatActivity {
         // assigns textview class to XML textview
         answerCoinFlip = (TextView) findViewById(R.id.answer_coin_flip);
 
+        imageViewCoin = (ImageView) findViewById(R.id.imageview_coin);
+
         // sets what happens when the button is pressed
         buttonFlipCoin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,8 +45,10 @@ public class CoinFlip extends AppCompatActivity {
 
                 if (coinFlip == 0) {
                     answerCoinFlip.setText(R.string.coin_flip_heads);
+                    imageViewCoin.setImageResource(R.drawable.heads);
                 } else if (coinFlip == 1){
                     answerCoinFlip.setText(R.string.coin_flip_tails);
+                    imageViewCoin.setImageResource(R.drawable.tails);
                 } else {
                     answerCoinFlip.setText(R.string.coin_flip_error);
                 }
