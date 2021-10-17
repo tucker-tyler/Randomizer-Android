@@ -52,5 +52,7 @@
     <string name="credits_copyright">&#169; webcooltz 2021</string>
     <string name="credits_github"><a href="https://github.com/tucker-tyler/randomizer-android">GitHub Repository</a></string>
     <string name="credits_icons"><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
 
 </resources>
